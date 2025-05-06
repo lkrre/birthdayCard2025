@@ -9,15 +9,11 @@
 
 <body>
 
-  <!-- GSAP Library -->
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/Observer.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/Physics2DPlugin.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
-
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/CustomEase.min.js"></script>
-  <!-- CustomWiggle requires CustomEase -->
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/CustomWiggle.min.js"></script>
 
   <p id="instructions">click and drag</p>
@@ -33,32 +29,21 @@
           </div>
 
           <div class="image-preload" aria-hidden="true">
-            <img data-key="combo" src="heart.png" width="1" height="1"
+            <img data-key="heart" src="assets/heart.png" width="1" height="1"
+              style="position: absolute; left: -9999px;" />
+            <img data-key="cone" src="assets/cone.png" width="1" height="1"
               style="position: absolute; left: -9999px;" />
           </div>
           <div class="explosion-preload" aria-hidden="true">
-            <img data-key="confetti1" src="assets/confetti1.png"
-              style="position: absolute; left: -9999px;" />
-            <!-- <img data-key="green-keyframe" src="https://assets.codepen.io/16327/2D-keyframe.png"
-              style="position: absolute; left: -9999px;" />
-            <img data-key="orange-lightning" src="https://assets.codepen.io/16327/2D-lightning.png"
-              style="position: absolute; left: -9999px;" />
-            <img data-key="orange-star" src="https://assets.codepen.io/16327/2D-star.png"
-              style="position: absolute; left: -9999px;" />
-            <img data-key="purple-flower" src="https://assets.codepen.io/16327/2D-flower.png"
-              style="position: absolute; left: -9999px;" />
-            <img data-key="cone" src="https://assets.codepen.io/16327/3D-cone.png"
-              style="position: absolute; left: -9999px;" />
-            <img data-key="keyframe" src="https://assets.codepen.io/16327/3D-spiral.png"
-              style="position: absolute; left: -9999px;" />
-            <img data-key="spiral" src="https://assets.codepen.io/16327/3D-spiral.png"
-              style="position: absolute; left: -9999px;" />
-            <img data-key="tunnel" src="https://assets.codepen.io/16327/3D-tunnel.png"
-              style="position: absolute; left: -9999px;" />
-            <img data-key="hoop" src="https://assets.codepen.io/16327/3D-hoop.png"
-              style="position: absolute; left: -9999px;" />
-            <img data-key="semi" src="https://assets.codepen.io/16327/3D-semi.png"
-              style="position: absolute; left: -9999px;" /> -->
+            <img data-key="confetti1" src="assets/confetti1.png" style="position: absolute; left: -9999px;" />
+            <img data-key="confetti2" src="assets/confetti2.png" style="position: absolute; left: -9999px;" />
+            <img data-key="confetti3" src="assets/confetti3.png" style="position: absolute; left: -9999px;" />
+            <img data-key="confetti4" src="assets/confetti4.png" style="position: absolute; left: -9999px;" />
+            <img data-key="confetti5" src="assets/confetti5.png" style="position: absolute; left: -9999px;" />
+            <img data-key="confetti6" src="assets/confetti6.png" style="position: absolute; left: -9999px;" />
+            <img data-key="confetti7" src="assets/confetti7.png" style="position: absolute; left: -9999px;" />
+            <img data-key="confetti8" src="assets/confetti8.png" style="position: absolute; left: -9999px;" />
+            <img data-key="confetti9" src="assets/confetti9.png" style="position: absolute; left: -9999px;" />
           </div>
 
         </div>
@@ -68,7 +53,6 @@
     </div>
   </section>
 
-  <!-- Tu script personalizado -->
   <script src="script.js"></script>
 </body>
 
