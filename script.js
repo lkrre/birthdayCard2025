@@ -221,8 +221,8 @@ class confettiCannon {
     const hb = document.createElement("img");
     hb.src = "assets/happyBirthday.png";
     hb.className = "explosion-hb";
-    hb.style.left = `${x}px`;
-    hb.style.top = `${y}px`;
+    hb.style.left = `${x-125}px`;
+    hb.style.top = `${y-25}px`;
     document.body.appendChild(hb);
 
     gsap.set(hb, {
