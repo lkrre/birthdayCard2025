@@ -13,6 +13,8 @@ class confettiCannon {
   init() {
     const hero = this.el;
     this.hero = hero;
+    this.explosionSound = new Audio("assets/fireworks.mp3");
+    this.explosionSound.load();
 
     const el = {
       hand: hero.querySelector(".pricing-hero__hand"),
@@ -25,6 +27,7 @@ class confettiCannon {
       preloadImages: hero.querySelectorAll(".image-preload img"),
       xplodePreloadImages: hero.querySelectorAll(".explosion-preload img")
     };
+
     this.el = el;
     this.isDrawing = false;
 
@@ -224,7 +227,7 @@ class confettiCannon {
 
     gsap.set(hb, {
       position: "absolute",
-      width: "150px",
+      width: "250px",
       opacity: 0,
       pointerEvents: "none",
       zIndex: 9999
@@ -243,6 +246,10 @@ class confettiCannon {
   }
 
   createExplosion(x, y, distance = 100) {
+    this.explosionSound.currentTime = 0.8;
+    this.explosionSound.volume = 0.2;
+    this.explosionSound.play();
+
     const count = Math.round(gsap.utils.clamp(3, 100, distance / 20));
     const angleSpread = Math.PI * 2;
     const explosion = gsap.timeline();
