@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Flair Confetti</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/Observer.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/Physics2DPlugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/CustomEase.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/CustomWiggle.min.js"></script>
+
+  <p id="instructions">click and drag</p>
+  <section class="hero pricing-hero" data-block="pricing-hero">
+    <div class="container">
+      <div class="pricing-hero__content">
+        <div class="pricing-hero__flair">
+          <div class="pricing-hero__hand">
+            <img class="pricing-hero__drag" src="assets/hand-drag.png" alt="">
+            <img class="pricing-hero__rock" src="assets/hand-rock.png" alt="">
+            <small>drag me</small>
+          </div>
+
+          <div class="image-preload" aria-hidden="true">
+            <img data-key="heart" src="assets/heart.png" width="1" height="1"
+              style="position: absolute; left: -9999px;" />
+            <img data-key="cone" src="assets/cone.png" width="1" height="1"
+              style="position: absolute; left: -9999px;" />
+          </div>
+          <div class="explosion-preload" aria-hidden="true">
+            <img data-key="confetti1" src="assets/confetti1.png" style="position: absolute; left: -9999px;" />
+            <img data-key="confetti2" src="assets/confetti2.png" style="position: absolute; left: -9999px;" />
+            <img data-key="confetti3" src="assets/confetti3.png" style="position: absolute; left: -9999px;" />
+            <img data-key="confetti4" src="assets/confetti4.png" style="position: absolute; left: -9999px;" />
+            <img data-key="confetti5" src="assets/confetti5.png" style="position: absolute; left: -9999px;" />
+            <img data-key="confetti6" src="assets/confetti6.png" style="position: absolute; left: -9999px;" />
+            <img data-key="confetti7" src="assets/confetti7.png" style="position: absolute; left: -9999px;" />
+            <img data-key="confetti8" src="assets/confetti8.png" style="position: absolute; left: -9999px;" />
+            <img data-key="confetti9" src="assets/confetti9.png" style="position: absolute; left: -9999px;" />
+            <img data-key="ballon1" src="assets/ballon1.png" style="position: absolute; left: -9999px;" />
+            <img data-key="ballon2" src="assets/ballon2.png" style="position: absolute; left: -9999px;" />
+            <img data-key="ballon3" src="assets/ballon3.png" style="position: absolute; left: -9999px;" />
+          </div>
+        </div>
+      </div>
+      <svg class="pricing-hero__canvas"></svg>
+      <div class="pricing-hero__proxy"></div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
